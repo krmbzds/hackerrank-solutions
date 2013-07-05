@@ -7,14 +7,12 @@ def displayPathtoPrincess(n, grid):
     if debug: # debug
         for row in grid: print(row)
 
-    for el in grid:
-        if "p" in el:
-            px = el.index("p")
-            py = grid.index(el)
+    for row in grid:
+        if "p" in row:
+            px, py = row.index("p"), grid.index(row)
 
-        if "m" in el:
-            mx = el.index("m")
-            my = grid.index(el)
+        if "m" in row:
+            mx, my = row.index("m"), grid.index(row)
 
     if debug: # debug
         print(("px: {0}\tpy: {1}\nmx: {2}\tmy: {3}".format(
@@ -49,7 +47,6 @@ def displayPathtoPrincess(n, grid):
 m = int(input())
 
 _null = input()
-_null2 = input()
 
 grid = []
 for i in range(0, m):
