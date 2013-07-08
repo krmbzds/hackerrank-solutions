@@ -42,3 +42,5 @@ _null = input()
 grid = [input().strip() for i in range(m)]
 
 displayPathtoPrincess(m, grid)
+
+# Sait made a litte edit, lol.
